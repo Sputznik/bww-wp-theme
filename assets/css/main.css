@@ -89,9 +89,50 @@ p {
   transition: opacity 0.2s;
 }
 
+/* ORBIT GRID 4 */
+.articles-four-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.articles-four-grid .orbit-thumbnail-bg {
+  min-height: 175px;
+  margin-bottom: 30px;
+}
+
+.articles-four-grid .post-desc {
+  color: #333333;
+}
+
+.articles-four-grid .post-title {
+  margin: 0;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.articles-four-grid .meta {
+  display: block;
+  margin: 10px 0;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 /* -------------------------- MEDIA QUERIES ------------------------- */
 @media(min-width: 768px) {
   .bww-register-btn:hover {
     opacity: 0.8;
+  }
+}
+
+@media(max-width: 1024px) {
+  .articles-four-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 426px) {
+  .articles-four-grid {
+    grid-template-columns: 1fr;
   }
 }
