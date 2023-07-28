@@ -78,6 +78,14 @@ p {
   margin-bottom: 40px;
 }
 
+/* RELATED POSTS */
+.related-posts-headline-wrapper {
+  font-size: 18px;
+  margin: 20px 0;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #000000;
+}
+
 .bww-register-btn {
   margin: 20px 0;
   font-size: 16px;
@@ -99,10 +107,6 @@ p {
 .articles-four-grid .orbit-thumbnail-bg {
   min-height: 175px;
   margin-bottom: 30px;
-}
-
-.articles-four-grid .post-desc {
-  color: #333333;
 }
 
 .articles-four-grid .post-title {

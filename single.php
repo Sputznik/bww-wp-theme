@@ -19,6 +19,7 @@ $show_register_btn = !empty( $registration_url ) && ( $post->post_status == 'fut
               <a href="<?php _e( $registration_url );?>" class="bww-register-btn">Register now</a>
             <?php endif;?>
             <div class="post-content"><?php the_content(); ?></div>
+            <?php get_template_part( 'partials/post/related-posts' ); ?>
           </div>
         </div>
       </div>
