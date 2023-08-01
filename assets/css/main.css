@@ -8,6 +8,13 @@ p {
   line-height: 24px;
 }
 
+.bww-headline-wrapper {
+  font-size: 18px;
+  margin: 20px 0;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #000000;
+}
+
 /* SINGLE POST TEMPLATE */
 #bww-single-post {
   padding-top: 52.4px;
@@ -122,21 +129,77 @@ p {
   line-height: 24px;
 }
 
+/* BWW PANELIST */
+.bww-panelist {
+  margin: 30px 0;
+}
+
+.bww-panelist .bww-panelist-speaker,
+.bww-panelist .bww-panelist-moderator {
+  padding: 0;
+  list-style: none;
+}
+
+.bww-panelist .bww-moderator {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex-direction: column;
+}
+
+.bww-panelist .bww-panelist-speaker {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.bww-panelist .author-info,
+.bww-panelist .author-avatar-parent {
+  align-self: flex-start;
+}
+
+.bww-panelist .author-avatar {
+  width: 145px;
+  height: 145px;
+  outline: none;
+  border-radius: 9999px;
+  display: inline-block;
+  text-decoration: none;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bww-panelist .author-name,
+.bww-panelist .author-designation {
+  font-weight: bold;
+}
+
+
 /* -------------------------- MEDIA QUERIES ------------------------- */
 @media(min-width: 768px) {
   .bww-register-btn:hover {
     opacity: 0.8;
   }
+
+  .bww-panelist-moderator .bww-moderator {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
 }
 
 @media(max-width: 1024px) {
-  .articles-four-grid {
+  .articles-four-grid,
+  .bww-panelist .bww-panelist-speaker {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media(max-width: 426px) {
-  .articles-four-grid {
+  .articles-four-grid,
+  .bww-panelist .bww-panelist-speaker {
     grid-template-columns: 1fr;
   }
 }

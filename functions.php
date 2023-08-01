@@ -13,7 +13,8 @@ if( !defined( 'BWW_THEME_URI' ) ) {
 $inc_files = array(
   'lib/class-bww-theme.php',
   'lib/bww-orbit-cf.php',
-  'lib/class-bww-user-profile.php'
+  'lib/class-bww-user-profile.php',
+  'lib/class-bww-shortcodes.php'
 );
 
 foreach( $inc_files as $inc_file ){ require_once( $inc_file ); }
