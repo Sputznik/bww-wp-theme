@@ -1,0 +1,39 @@
+.mce-bww-panelist-shortcode-btn {
+  padding: 0px 4px !important;
+  box-shadow: none !important;
+  background: #f6f7f7 !important;
+  border-color: #2271b1 !important;
+}
+
+.mce-bww-panelist-shortcode-btn:hover {
+  border-color: #0a4b78 !important;
+  background-color: #f0f0f1 !important;
+}
+
+.mce-bww-panelist-shortcode-btn .mce-txt,
+.mce-bww-panelist-shortcode-btn .mce-i-link {
+  color: #2271b1 !important;
+  line-height: 20px !important;
+}
+
+.mce-bww-panelist-shortcode-btn:hover .mce-txt,
+.mce-bww-panelist-shortcode-btn:hover .mce-i-link {
+  color: #0a4b78 !important;
+}
+
+#bww-panelist-shortcode-dialog #bww-panelist-shortcode-dialog-dragh {
+  pointer-events: none !important;
+}
+
+#bww-panelist-shortcode-dialog .mce-window-head .mce-close:focus .mce-i-remove {
+  box-shadow: none !important;
+}
+
+#bww-panelist-shortcode-dialog .mce-foot .mce-btn
+#bww-panelist-shortcode-dialog .mce-window-body .mce-btn {
+  box-shadow: none !important;
+}
+
+#bww-panelist-shortcode-dialog .mce-btn:active {
+  transform: none !important;
+}
