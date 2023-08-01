@@ -13,9 +13,9 @@ get_header();
           <div class="col-sm-12">
             <h1 class="post-title"><?php the_title();?></h1>
             <p class="post-date"><?php the_time( 'M j, Y' );?> | <?php the_time('g:i A'); ?></p>
-            <?php get_template_part( 'partials/bww-register-btn' ); ?>
+            <?php get_template_part( 'partials/post/bww-register-btn' ); ?>
             <div class="post-content <?php _e( "post-".$post->post_status )?>"><?php the_content(); ?></div>
-            <?php get_template_part( 'partials/bww-register-btn' ); ?>
+            <?php get_template_part( 'partials/post/bww-register-btn' ); ?>
             <?php get_template_part( 'partials/post/related-posts' ); ?>
           </div>
         </div>
