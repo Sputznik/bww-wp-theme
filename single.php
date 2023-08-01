@@ -1,6 +1,6 @@
 <?php
 /**
- * The Template for displaying all single posts
+ * The template for displaying all single posts
  */
 get_header();
 $registration_url  = get_post_meta( $post->ID, 'registration_url', true );
