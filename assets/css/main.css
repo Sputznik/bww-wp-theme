@@ -102,11 +102,20 @@ p {
   transition: opacity 0.2s;
 }
 
-/* ORBIT GRID 4 */
-.articles-four-grid {
+/* ORBIT GRID */
+.articles-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
+}
+
+/* GRID 4 */
+.articles-four-grid {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* GRID 3 */
+.articles-three-grid {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .articles-grid .orbit-thumbnail-bg {
@@ -186,6 +195,28 @@ p {
   top: 0;
 }
 
+/* AUTHOR */
+body.author .bww-panelist {
+  margin-bottom:50px;
+  padding-top: 52.4px;
+}
+
+.author .author-posts {
+  margin-bottom: 60px;
+}
+
+.author .articles-three-grid .orbit-thumbnail-bg {
+  min-height: 240px;
+}
+
+.author-posts button.load-more {
+  background: #000;
+  color: #fff;
+  border: 0;
+  padding: 8px 16px;
+  margin-top: 20px;
+}
+
 /* -------------------------- MEDIA QUERIES ------------------------- */
 @media(min-width: 768px) {
   .bww-register-btn:hover {
@@ -210,14 +241,14 @@ p {
 }
 
 @media(max-width: 1024px) {
-  .articles-four-grid,
+  .articles-grid,
   .bww-panelist .bww-panelist-speaker {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media(max-width: 426px) {
-  .articles-four-grid,
+  .articles-grid,
   .bww-panelist .bww-panelist-speaker {
     grid-template-columns: 1fr;
   }
