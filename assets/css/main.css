@@ -109,18 +109,18 @@ p {
   grid-gap: 20px;
 }
 
-.articles-four-grid .orbit-thumbnail-bg {
+.articles-grid .orbit-thumbnail-bg {
   min-height: 175px;
   margin-bottom: 30px;
 }
 
-.articles-four-grid .post-title {
+.articles-grid .post-title {
   margin: 0;
   font-size: 22px;
   line-height: 30px;
 }
 
-.articles-four-grid .meta {
+.articles-grid .meta {
   display: block;
   margin: 10px 0;
   font-size: 18px;
