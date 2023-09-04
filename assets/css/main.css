@@ -16,7 +16,8 @@ p {
 }
 
 /* SINGLE POST TEMPLATE */
-#bww-single-post {
+#bww-single-post,
+#bww-single-post-sow {
   padding-top: 52.4px;
 }
 
