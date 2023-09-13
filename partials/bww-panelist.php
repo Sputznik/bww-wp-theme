@@ -5,7 +5,7 @@
 $headline      = !empty( $args['headline'] ) ? $args['headline'] : '';
 $panelist_type = !empty( $args['type'] ) ? $args['type'] : '';
 ?>
-<div class="bww-panelist">
+<div class="bww-panelist <?php _e( $args['class'] );?>">
   <?php if( $headline ): ?>
     <div class="bww-headline-wrapper">
       <span class="text-uppercase"><?php _e( $headline );?></span>
@@ -26,9 +26,9 @@ $panelist_type = !empty( $args['type'] ) ? $args['type'] : '';
           <?php if( $designation ):?>
             <p class="author-designation"><?php _e( $designation ); ?></p>
           <?php endif;?>
-          <?php if( $panelist_type === 'moderator' ):?>
-            <div class="author-bio"><?php _e( $author->description ); ?></div>
-          <?php endif;?>
+          <?php //if( $panelist_type === 'moderator' ):?>
+            <!-- <div class="author-bio"><?php //_e( $author->description ); ?></div> -->
+          <?php //endif;?>
           <?php if( $panelist_type === 'speaker' ):?>
             <div class="author-bio"><?php _e( !empty( $author->description ) ? substr( $author->description, 0, 100).'...' : '' ); ?></div>
           <?php endif;?>

@@ -14,6 +14,15 @@ class BWW_SHORTCODES {
         'headline' => ''
       ), $atts );
 
+      // WRAPPER CLASS TO CHANGE THE LAYOUT
+      $args['class'] = $args['type'] ? $args['type'].'-panelist-wrap' : '';
+
+      // ORIGINAL MODERATOR LAYOUT IS NOT BEING USED ANYMORE
+      // CHANGE TYPE TO USE SPEAKER LAYOUT INSTEAD OF MODERATOR LAYOUT
+      if( $args['type'] == 'moderator' ){
+        $args['type'] = 'speaker';
+      }
+
       $authors = array();
       $author_ids = !empty( $args['id'] ) ? explode( ',', $args['id'] ) : '';
 

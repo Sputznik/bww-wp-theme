@@ -223,11 +223,6 @@ body.author .bww-panelist {
     opacity: 0.8;
   }
 
-  .bww-panelist-moderator .bww-moderator {
-    flex-wrap: nowrap;
-    flex-direction: row;
-  }
-
   .articles-bww-slide .bww-slide-body {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -236,6 +231,40 @@ body.author .bww-panelist {
 
   .articles-bww-slide .bww-headline-wrapper {
     margin-top: -5px;
+  }
+
+  /* BWW PANELIST */
+  .bww-panelist-moderator .bww-moderator {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+
+  .speaker-panelist-wrap,
+  .moderator-panelist-wrap {
+    float: left;
+  }
+
+  #bww-single-post .post-content::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+
+  .moderator-panelist-wrap {
+    width: 25%;
+  }
+
+  .moderator-panelist-wrap.bww-panelist .bww-panelist-speaker {
+    grid-template-columns: 1fr;
+  }
+
+  .speaker-panelist-wrap {
+    width: calc(75% - 25px);
+    margin-left: 25px;
+  }
+
+  .speaker-panelist-wrap.bww-panelist .bww-panelist-speaker {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
 }
