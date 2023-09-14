@@ -13,10 +13,10 @@ $designation = get_user_meta( $author->ID, 'bww_designation', true );
       <div class="bww-moderator">
         <div class="author-avatar-parent">
           <div class="author-avatar" style="background-image: url(<?php _e( $avatar_url );?>);" role="image" aria-label="Avatar"></div>
-        </div>
-        <div class="author-info">
           <p class="author-name text-capitalize"><?php _e( $author->display_name ); ?></p>
           <p class="author-designation"><?php _e( $designation ); ?></p>
+        </div>
+        <div class="author-info">
           <div class="author-bio"><?php _e( $author->description ); ?></div>
         </div>
       </div>
