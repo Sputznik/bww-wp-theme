@@ -17,7 +17,8 @@ p {
 
 /* SINGLE POST TEMPLATE */
 #bww-single-post,
-#bww-single-post-sow {
+#bww-single-post-sow,
+.archive-header {
   padding-top: 52.4px;
 }
 
@@ -215,6 +216,19 @@ body.author .bww-panelist {
   border: 0;
   padding: 8px 16px;
   margin-top: 20px;
+}
+
+/* ARCHIVE */
+body.archive .articles-post-list-wrap {
+  margin: 25px auto 60px;
+}
+
+body.archive button.load-more {
+  border: 0;
+  color: #ffffff;
+  margin-top: 20px;
+  padding: 8px 16px;
+  background: #000000;
 }
 
 /* -------------------------- MEDIA QUERIES ------------------------- */
