@@ -197,9 +197,13 @@ p {
 }
 
 /* AUTHOR */
-body.author .bww-panelist {
-  margin-bottom:50px;
+.author-header.bww-panelist {
+  margin-bottom: 50px;
   padding-top: 52.4px;
+}
+
+.author-header .bww-moderator {
+  margin-top: 30px;
 }
 
 .author .author-posts {
