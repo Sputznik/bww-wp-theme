@@ -210,20 +210,13 @@ body.author .bww-panelist {
   min-height: 240px;
 }
 
-.author-posts button.load-more {
-  background: #000;
-  color: #fff;
-  border: 0;
-  padding: 8px 16px;
-  margin-top: 20px;
-}
-
 /* ARCHIVE */
 body.archive .articles-post-list-wrap {
   margin: 25px auto 60px;
 }
 
-body.archive button.load-more {
+/* ORBIT LOAD MORE */
+.orbit-btn-load-parent button.load-more {
   border: 0;
   color: #ffffff;
   margin-top: 20px;

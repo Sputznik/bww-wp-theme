@@ -1,5 +1,5 @@
 <div class="bww-panelist">
-  <ul class="bww-panelist-speaker">
+  <ul id="<?php _e( $atts['id'] );?>" data-target="<?php _e('li.bww-speaker');?>" data-url="<?php _e( $atts['url'] );?>" class="bww-panelist-speaker">
     <?php foreach ( $this->query->results as $user ):
       $avatar_url  = get_avatar_url( $user->ID );
       $user_link = get_author_posts_url( $user->ID );
