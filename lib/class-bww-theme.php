@@ -9,6 +9,7 @@ class BWW_THEME {
 
     add_action( 'wp_enqueue_scripts', array( $this, 'assets' ) );  // LOAD ASSETS
     add_action( 'admin_enqueue_scripts', array( $this, 'admin_assets' ) );  // LOAD ADMIN ASSETS
+    add_filter('the_posts', array( $this, 'show_scheduled_posts' ) ); // SHOW SCHEDULED POSTS IN SINGLE.PHP
 
   }
 
@@ -22,6 +23,16 @@ class BWW_THEME {
   function admin_assets(){
     // ENQUEUE SCRIPTS
     wp_enqueue_style( 'bww-mce-btn', BWW_THEME_URI."/assets/css/bww-mce-btn.css", array(), BWW_THEME_VERSION );
+  }
+
+  function show_scheduled_posts( $posts ){
+    global $wp_query, $wpdb;
+
+    if( is_single() && $wp_query->post_count == 0 ){
+      $posts = $wpdb->get_results( $wp_query->request );
+    }
+
+    return $posts;
   }
 
 }
