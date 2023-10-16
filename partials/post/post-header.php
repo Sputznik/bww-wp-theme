@@ -2,12 +2,12 @@
 /**
  * The template for displaying single post header.
  */
- $image_url       = false;
+ $featured_img       = false;
  $youtube_url     = get_post_meta( $post->ID, 'youtube_url', true );
  $show_video = ( strlen( trim( $youtube_url ) ) > 0 ) && ( $post->post_status == 'publish' );
 
  if( !$show_video ){
-   $image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' )[0];
+   $featured_img = get_the_post_thumbnail( $post->ID, 'full', array( 'alt'=> 'Featured Image' ) );
  }
 ?>
 <?php if( $show_video ): ?>
@@ -21,10 +21,10 @@
     </div>
   </div>
 <?php endif; ?>
-<?php if( !$show_video && $image_url ): ?>
+<?php if( !$show_video && $featured_img ): ?>
   <div class="featured-image-container">
     <div class="container">
-      <div class="featured-img" style="background-image:url(<?php _e( $image_url );?>);" role="img" aria-label="Featured Image"></div>
+      <div class="featured-img"><?php echo $featured_img; ?></div>
     </div>
   </div>
 <?php endif;?>
