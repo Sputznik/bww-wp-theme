@@ -7,6 +7,7 @@ $post_date = get_the_time( 'M j, Y' );
 ?>
 <div id="bww-single-post">
   <?php if( have_posts() ): while( have_posts() ): the_post(); ?>
+    <div data-behaviour="post-view-stat" data-id="<?php _e( $post->ID );?>"></div>
     <?php get_template_part("partials/post/post-header"); ?>
     <div class="content-container">
       <div class="container">

@@ -219,6 +219,24 @@ body.archive .articles-post-list-wrap {
   background: #000000;
 }
 
+/* POPULAR POSTS */
+.popular-posts .orbit-article-db {
+  display: grid;
+  margin-bottom: 20px;
+  grid-column-gap: 15px;
+  grid-template-columns: 1fr 120px;
+}
+
+.popular-posts .title {
+  margin: 0;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.popular-posts .orbit-thumbnail-bg {
+  min-height: 170px;
+}
+
 /* -------------------------- MEDIA QUERIES ------------------------- */
 @media(min-width: 768px) {
   .bww-register-btn:hover {
@@ -281,6 +299,10 @@ body.archive .articles-post-list-wrap {
   body.author .author-info {
     flex: 1;
     margin-left: 10px;
+  }
+
+  .popular-posts .orbit-article-db {
+    grid-template-columns: 1fr 188px;
   }
 
 }
