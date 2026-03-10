@@ -4,8 +4,8 @@
     <?php
       $post_id = get_the_ID();
       $permalink = get_the_permalink();
-      $thumbnail      = wp_get_attachment_image_src( get_post_thumbnail_id( $post_id ), 'full' )[0];
-      $background_img = !empty( $thumbnail ) ? 'style="background-image:url('.$thumbnail.');"' : "";
+      $thumbnail      = wp_get_attachment_image_src( get_post_thumbnail_id( $post_id ), 'full' );
+      $background_img = !empty( $thumbnail ) ? 'style="background-image:url('.$thumbnail[0].');"' : "";
     ?>
     <li class="orbit-article-db">
       <h4 class="title"><a href="<?php _e( $permalink ); ?>"><?php the_title(); ?></a></h4>

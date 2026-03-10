@@ -3,8 +3,8 @@
     <?php
       $current_post   = $this->query->post;
       $permalink      = get_the_permalink();
-      $thumbnail      = wp_get_attachment_image_src( get_post_thumbnail_id( $current_post->ID ), 'full' )[0];
-      $background_img = !empty( $thumbnail ) ? 'style="background-image:url('.$thumbnail.');"' : "";
+      $thumbnail      = wp_get_attachment_image_src( get_post_thumbnail_id( $current_post->ID ), 'full' );
+      $background_img = !empty( $thumbnail ) ? 'style="background-image:url('.$thumbnail[0].');"' : "";
       $slide_headline = $current_post->post_status == 'future' ? 'UPCOMING' : 'RECENT';
     ?>
     <div class="bww-slide-body">

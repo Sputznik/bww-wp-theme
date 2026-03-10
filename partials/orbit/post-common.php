@@ -1,7 +1,7 @@
 <?php
   $permalink      = get_the_permalink();
-  $thumbnail      = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' )[0];
-  $background_img = !empty( $thumbnail ) ? 'style="background-image:url('.$thumbnail.');"' : "";
+  $thumbnail      = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
+  $background_img = !empty( $thumbnail ) ? 'style="background-image:url('.$thumbnail[0].');"' : "";
 ?>
 
 <div class="orbit-thumbnail-bg" <?php _e( $background_img ); ?>>
