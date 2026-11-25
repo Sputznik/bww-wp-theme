@@ -20,6 +20,7 @@ $inc_files = array(
   'lib/class-bww-user-profile.php',
   'lib/class-bww-shortcodes.php',
   'lib/admin/class-bww-tinymce.php',
+  'lib/admin/class-bww-post-admin.php',
   'lib/class-bww-post-views.php'
 );
 
