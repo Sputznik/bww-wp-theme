@@ -2,7 +2,7 @@
 
 /*  CONSTANTS */
 if( !defined( 'BWW_THEME_VERSION' ) ) {
-  define( 'BWW_THEME_VERSION', '1.0.1' );
+  define( 'BWW_THEME_VERSION', '1.1.0' );
 }
 
 if( !defined( 'BWW_THEME_URI' ) ) {
